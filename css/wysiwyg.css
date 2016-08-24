@@ -1,3 +1,11 @@
-body {
-    background-color: blue;
+div.person_container:nth-of-type(even) {
+    background-color: #ffff66;
+}
+
+div.person_container:nth-of-type(odd) {
+    background-color: #87CEFA;
+}
+
+.dotted_border {
+    border: 1px dotted black;
 }
