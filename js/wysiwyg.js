@@ -50,7 +50,6 @@ var famousPeople = [{
 var i = 0;
 var lastSection;
 var editBio = document.getElementById("editBio");
-console.log(famousPeople);
 
 
 // create innerHTML element in a function???
