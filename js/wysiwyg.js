@@ -6,7 +6,7 @@ var lastSection;
 var editBio = document.getElementById("editBio");
 var container = document.getElementById("container");
 
-// Creating the object array
+// Adding to the object
 for(var j = 0; j < 5; j++) {
     famousPeople.push({title: "Samurai",
         name: "Zoey Leggett",
