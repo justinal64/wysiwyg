@@ -1,59 +1,25 @@
 
-var famousPeople = [{
-    title: "Samurai",
-    name: "Tomoe Gozen",
-    bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg bio0",
-    lifespan: {
-        birth: 1747,
-        death: 1797
-    }
-}, {
-    title: "Samurai",
-    name: "Justin Leggett",
-    bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg bio1",
-    lifespan: {
-        birth: 1747,
-        death: 1797
-    }
-}, {
-    title: "Samurai",
-    name: "Katie Leggett",
-    bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg bio2",
-    lifespan: {
-        birth: 1747,
-        death: 1797
-    }
-}, {
-    title: "Samurai",
-    name: "Kallie Leggett",
-    bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg bio3",
-    lifespan: {
-        birth: 1747,
-        death: 1797
-    }
-},{
-    title: "Samurai",
-    name: "Zoey Leggett",
-    bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg bio4",
-    lifespan: {
-        birth: 1747,
-        death: 1797
-    }
-}];
-
-// used to iterate through object
+// used to iterate through famousPeople
+var famousPeople = [];
 var i = 0;
 var lastSection;
 var editBio = document.getElementById("editBio");
-
-
-// create innerHTML element in a function???
 var container = document.getElementById("container");
+
+// Creating the object array
+for(var j = 0; j < 5; j++) {
+    famousPeople.push({title: "Samurai",
+        name: "Zoey Leggett",
+        bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
+        lifespan: {
+        birth: 1747,
+        death: 1797
+        }
+    });
+}
+
+// creating the 5 different div's
 for (var counter = 0; counter < 5; counter++) {
   // Give each person element a unique identifier
   container.innerHTML += "<div class='person_container' id='person_" + counter + "'><person><header>" +
@@ -90,12 +56,4 @@ for (var i = 0; i < containerEl.length; i++) {
         editBio.value = bio.innerHTML;
     });
 };
-
-
-
-
-
-
-
-
 
